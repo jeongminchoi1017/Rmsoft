@@ -1,850 +1,272 @@
-2024-01-16T10:29:13.217+09:00  INFO 19192 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 19192 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T10:29:13.222+09:00  INFO 19192 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T10:29:13.263+09:00  INFO 19192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-01-16T10:29:13.263+09:00  INFO 19192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-01-16T10:29:14.189+09:00  INFO 19192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T10:29:14.198+09:00  INFO 19192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T10:29:14.199+09:00  INFO 19192 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T10:29:14.238+09:00  INFO 19192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T10:29:14.238+09:00  INFO 19192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 974 ms
-2024-01-16T10:29:14.707+09:00  INFO 19192 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@182780bb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7044d00b, org.springframework.security.web.context.SecurityContextHolderFilter@17ecc302, org.springframework.security.web.header.HeaderWriterFilter@50476529, org.springframework.web.filter.CorsFilter@76ca5ea7, org.springframework.security.web.authentication.logout.LogoutFilter@48c23887, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c11959f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c778533, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4de57ebe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e116c22, org.springframework.security.web.access.ExceptionTranslationFilter@6f0a1e84, org.springframework.security.web.access.intercept.AuthorizationFilter@9cc38ec]
-2024-01-16T10:29:14.915+09:00  INFO 19192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-01-16T10:29:14.947+09:00  INFO 19192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-01-16T10:29:14.954+09:00  INFO 19192 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 2.102 seconds (process running for 2.582)
-2024-01-16T10:29:51.247+09:00  INFO 19192 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-16T10:29:51.248+09:00  INFO 19192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-16T10:29:51.249+09:00  INFO 19192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-01-16T10:29:56.367+09:00  INFO 19192 --- [http-nio-8080-exec-4] c.rmsoft.security.SecurityUserService    : username : user
-2024-01-16T10:29:56.388+09:00  INFO 19192 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-16T10:29:56.945+09:00  INFO 19192 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5409995a
-2024-01-16T10:29:56.952+09:00  INFO 19192 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-16T10:29:57.019+09:00  INFO 19192 --- [http-nio-8080-exec-4] c.rmsoft.security.SecurityUserService    : user : null
-2024-01-16T10:47:34.142+09:00  INFO 19192 --- [http-nio-8080-exec-5] c.rmsoft.security.SecurityUserService    : username : user
-2024-01-16T10:47:34.186+09:00  INFO 19192 --- [http-nio-8080-exec-5] c.rmsoft.security.SecurityUserService    : user : UserDTO(uid=user, pass=1234, name=유저, nick=별명, email=user@gmail.com, hp=010-1234-1234, role=USER, zip=12345, addr1=주소1, addr2=주소2, regip=등록 ip, regDate=2024-01-16T00:00, leaveDate=null)
-2024-01-16T10:47:34.186+09:00  INFO 19192 --- [http-nio-8080-exec-5] c.rmsoft.security.SecurityUserService    : user : UserDTO(uid=user, pass=1234, name=유저, nick=별명, email=user@gmail.com, hp=010-1234-1234, role=USER, zip=12345, addr1=주소1, addr2=주소2, regip=등록 ip, regDate=2024-01-16T00:00, leaveDate=null)
-2024-01-16T10:47:34.187+09:00  INFO 19192 --- [http-nio-8080-exec-5] c.rmsoft.security.SecurityUserService    : userDetails : MyUserDetails(user=UserDTO(uid=user, pass=1234, name=유저, nick=별명, email=user@gmail.com, hp=010-1234-1234, role=USER, zip=12345, addr1=주소1, addr2=주소2, regip=등록 ip, regDate=2024-01-16T00:00, leaveDate=null))
-2024-01-16T10:47:34.187+09:00  WARN 19192 --- [http-nio-8080-exec-5] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
-2024-01-16T10:48:42.644+09:00  INFO 19192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-16T10:48:42.801+09:00  INFO 19192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-16T11:11:42.704+09:00  INFO 11048 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 11048 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T11:11:42.705+09:00  INFO 11048 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T11:11:42.734+09:00  INFO 11048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-01-16T11:11:42.734+09:00  INFO 11048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-01-16T11:11:43.492+09:00  INFO 11048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T11:11:43.498+09:00  INFO 11048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T11:11:43.498+09:00  INFO 11048 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T11:11:43.534+09:00  INFO 11048 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T11:11:43.535+09:00  INFO 11048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 801 ms
-2024-01-16T11:11:43.906+09:00  INFO 11048 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73f10813, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fa8c46a, org.springframework.security.web.context.SecurityContextHolderFilter@7791967d, org.springframework.security.web.header.HeaderWriterFilter@5bd06b7, org.springframework.web.filter.CorsFilter@58a01205, org.springframework.security.web.authentication.logout.LogoutFilter@2c0d3ce3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8a6b29d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1bb99e85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a87074d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4be54eaf, org.springframework.security.web.access.ExceptionTranslationFilter@4e64295f, org.springframework.security.web.access.intercept.AuthorizationFilter@707d9710]
-2024-01-16T11:11:44.093+09:00  INFO 11048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-01-16T11:11:44.120+09:00  INFO 11048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-01-16T11:11:44.129+09:00  INFO 11048 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 1.69 seconds (process running for 2.035)
-2024-01-16T11:12:05.205+09:00  INFO 11048 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-16T11:12:05.205+09:00  INFO 11048 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-16T11:12:05.206+09:00  INFO 11048 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-01-16T14:40:53.220+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 8652 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T14:40:53.224+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T14:40:53.276+09:00  INFO 8652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-01-16T14:40:53.276+09:00  INFO 8652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-01-16T14:40:54.796+09:00  INFO 8652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T14:40:54.825+09:00  INFO 8652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T14:40:54.825+09:00  INFO 8652 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T14:40:54.899+09:00  INFO 8652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T14:40:54.900+09:00  INFO 8652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1623 ms
-2024-01-16T14:40:55.764+09:00  INFO 8652 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@160a7f2f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4146d052, org.springframework.security.web.context.SecurityContextHolderFilter@23a48be1, org.springframework.security.web.header.HeaderWriterFilter@e1886ae, org.springframework.web.filter.CorsFilter@35f5be09, org.springframework.security.web.authentication.logout.LogoutFilter@607df21c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e64edca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8cd1d48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@480f34c1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e2f32ca, org.springframework.security.web.access.ExceptionTranslationFilter@3a239cb6, org.springframework.security.web.access.intercept.AuthorizationFilter@82be60a]
-2024-01-16T14:40:56.121+09:00  INFO 8652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-01-16T14:40:56.166+09:00  INFO 8652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-01-16T14:40:56.180+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 3.607 seconds (process running for 4.375)
-2024-01-16T14:42:52.903+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-16T14:42:52.907+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-16T14:42:52.910+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-01-16T14:44:23.724+09:00  INFO 8652 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 185 class path changes (0 additions, 0 deletions, 185 modifications)
-2024-01-16T14:44:23.902+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 8652 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T14:44:23.903+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T14:44:24.389+09:00  INFO 8652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T14:44:24.390+09:00  INFO 8652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T14:44:24.390+09:00  INFO 8652 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T14:44:24.423+09:00  INFO 8652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T14:44:24.423+09:00  INFO 8652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 507 ms
-2024-01-16T14:44:24.645+09:00  INFO 8652 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@122e1e5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4aa52ae5, org.springframework.security.web.context.SecurityContextHolderFilter@9c36255, org.springframework.security.web.header.HeaderWriterFilter@17f12b6a, org.springframework.web.filter.CorsFilter@620d75ad, org.springframework.security.web.authentication.logout.LogoutFilter@70e9332e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b4230c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5fe2397b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32f9253d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27c9bd9e, org.springframework.security.web.access.ExceptionTranslationFilter@c3c395b, org.springframework.security.web.access.intercept.AuthorizationFilter@226ceda7]
-2024-01-16T14:44:24.756+09:00  INFO 8652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-01-16T14:44:24.777+09:00  INFO 8652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-01-16T14:44:24.780+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-16T14:44:24.780+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-16T14:44:24.782+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-01-16T14:44:24.790+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 0.945 seconds (process running for 212.986)
-2024-01-16T14:44:24.794+09:00  INFO 8652 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-01-16T14:44:29.148+09:00  INFO 8652 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-16T14:44:30.022+09:00  INFO 8652 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e3415d8
-2024-01-16T14:44:30.029+09:00  INFO 8652 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-16T14:44:30.144+09:00 ERROR 8652 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.apache.ibatis.binding.BindingException: Mapper method 'com.rmsoft.mapper.UserMapper.countUid' attempted to return null from a method with a primitive return type (int).] with root cause
+2024-01-17T12:51:26.100+09:00  INFO 9684 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 9684 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
+2024-01-17T12:51:26.106+09:00  INFO 9684 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-01-17T12:51:26.141+09:00  INFO 9684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-17T12:51:26.141+09:00  INFO 9684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-17T12:51:26.915+09:00  INFO 9684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-17T12:51:26.923+09:00  INFO 9684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-17T12:51:26.923+09:00  INFO 9684 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-17T12:51:26.957+09:00  INFO 9684 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-17T12:51:26.958+09:00  INFO 9684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 816 ms
+2024-01-17T12:51:26.994+09:00  WARN 9684 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [DD9EC89BBC2310B322A3D0A229D91B22]
+2024-01-17T12:51:27.433+09:00  INFO 9684 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@615c0d24, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e3559bd, org.springframework.security.web.context.SecurityContextHolderFilter@fcaee09, org.springframework.security.web.header.HeaderWriterFilter@4430ba43, org.springframework.web.filter.CorsFilter@33ea8b21, org.springframework.security.web.authentication.logout.LogoutFilter@35f5be09, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@169c7cb5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@279f9384, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@389fe9a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32f669ca, org.springframework.security.web.access.ExceptionTranslationFilter@fd5d5c8, org.springframework.security.web.access.intercept.AuthorizationFilter@46f52e7c]
+2024-01-17T12:51:27.642+09:00  INFO 9684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-17T12:51:27.663+09:00  INFO 9684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-17T12:51:27.668+09:00  INFO 9684 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 1.887 seconds (process running for 2.4)
+2024-01-17T12:51:34.734+09:00  INFO 9684 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-17T12:51:34.734+09:00  INFO 9684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-17T12:51:34.735+09:00  INFO 9684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-17T12:51:43.137+09:00  INFO 9684 --- [http-nio-8080-exec-7] c.rmsoft.security.SecurityUserService    : username : user
+2024-01-17T12:51:43.166+09:00  INFO 9684 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-17T12:51:43.776+09:00  INFO 9684 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23e920f
+2024-01-17T12:51:43.781+09:00  INFO 9684 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-17T12:51:43.864+09:00  INFO 9684 --- [http-nio-8080-exec-7] c.rmsoft.security.SecurityUserService    : userDetails : MyUserDetails(user=UserDTO(uid=user, pass=$2a$10$8E/mbHaCNQ6RjIcyAjIgUuVo3r8zvphcIYBzCPsmB8KOla3bLp1Fy, name=유저, nick=별명, email=user@gmail.com, hp=010-1234-1234, role=USER, zip=12345, addr1=주소1, addr2=주소2, regip=등록 ip, regDate=2024-01-16T00:00, leaveDate=null))
+2024-01-17T13:01:57.766+09:00  INFO 9684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-17T13:01:57.995+09:00  INFO 9684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-17T13:02:01.466+09:00  INFO 16584 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 16584 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
+2024-01-17T13:02:01.468+09:00  INFO 16584 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-01-17T13:02:01.494+09:00  INFO 16584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-17T13:02:01.494+09:00  INFO 16584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-17T13:02:02.192+09:00  INFO 16584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-17T13:02:02.199+09:00  INFO 16584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-17T13:02:02.199+09:00  INFO 16584 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-17T13:02:02.233+09:00  INFO 16584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-17T13:02:02.233+09:00  INFO 16584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 739 ms
+2024-01-17T13:02:02.265+09:00  WARN 16584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [FD539167EC00EE3AD9CBDE6FF4ED6A71]
+2024-01-17T13:02:02.559+09:00  INFO 16584 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@777cc17c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@140145a8, org.springframework.security.web.context.SecurityContextHolderFilter@7e245170, org.springframework.security.web.header.HeaderWriterFilter@176cf41e, org.springframework.web.filter.CorsFilter@10602096, org.springframework.security.web.authentication.logout.LogoutFilter@fcaee09, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38b7e47f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59b70b16, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fd7faba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@82be60a, org.springframework.security.web.access.ExceptionTranslationFilter@23170fa, org.springframework.security.web.access.intercept.AuthorizationFilter@18ff6c2f]
+2024-01-17T13:02:02.702+09:00  INFO 16584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-17T13:02:02.725+09:00  INFO 16584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-17T13:02:02.731+09:00  INFO 16584 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 1.521 seconds (process running for 1.859)
+2024-01-17T13:02:21.493+09:00  INFO 16584 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-17T13:02:21.494+09:00  INFO 16584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-17T13:02:21.495+09:00  INFO 16584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-17T13:02:46.501+09:00  INFO 16584 --- [http-nio-8080-exec-10] c.rmsoft.security.SecurityUserService    : username : user
+2024-01-17T13:02:46.511+09:00  INFO 16584 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-17T13:02:46.870+09:00  INFO 16584 --- [http-nio-8080-exec-10] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5763ee9f
+2024-01-17T13:02:46.875+09:00  INFO 16584 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-17T13:02:46.935+09:00  INFO 16584 --- [http-nio-8080-exec-10] c.rmsoft.security.SecurityUserService    : userDetails : MyUserDetails(user=UserDTO(uid=user, pass=$2a$10$8E/mbHaCNQ6RjIcyAjIgUuVo3r8zvphcIYBzCPsmB8KOla3bLp1Fy, name=유저, nick=별명, email=user@gmail.com, hp=010-1234-1234, role=USER, zip=12345, addr1=주소1, addr2=주소2, regip=등록 ip, regDate=2024-01-16T00:00, leaveDate=null))
+2024-01-17T13:02:46.995+09:00  INFO 16584 --- [http-nio-8080-exec-10] com.rmsoft.security.MyUserDetails        : authorities[ROLE_USER]
+2024-01-17T13:09:45.373+09:00  INFO 16584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-17T13:09:45.523+09:00  INFO 16584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-17T13:09:59.927+09:00  INFO 17516 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 17516 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
+2024-01-17T13:09:59.929+09:00  INFO 17516 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-01-17T13:09:59.955+09:00  INFO 17516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-17T13:09:59.956+09:00  INFO 17516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-17T13:10:00.630+09:00  INFO 17516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-17T13:10:00.636+09:00  INFO 17516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-17T13:10:00.636+09:00  INFO 17516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-17T13:10:00.664+09:00  INFO 17516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-17T13:10:00.665+09:00  INFO 17516 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 709 ms
+2024-01-17T13:10:00.699+09:00  WARN 17516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [952822EE96E8DC9D4CB69D37036B0D6F]
+2024-01-17T13:10:00.981+09:00  INFO 17516 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@513247d8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@308de22a, org.springframework.security.web.context.SecurityContextHolderFilter@82be60a, org.springframework.security.web.header.HeaderWriterFilter@777cc17c, org.springframework.web.filter.CorsFilter@31db876d, org.springframework.security.web.authentication.logout.LogoutFilter@32f669ca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@371249d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77f8bc6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@160a7f2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d906766, org.springframework.security.web.access.ExceptionTranslationFilter@2374f22c, org.springframework.security.web.access.intercept.AuthorizationFilter@7b1359a5]
+2024-01-17T13:10:01.115+09:00  INFO 17516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-17T13:10:01.139+09:00  INFO 17516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-17T13:10:01.145+09:00  INFO 17516 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 1.458 seconds (process running for 1.788)
+2024-01-17T13:10:02.981+09:00  INFO 17516 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-17T13:10:02.981+09:00  INFO 17516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-17T13:10:02.982+09:00  INFO 17516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-17T13:10:11.918+09:00  INFO 17516 --- [http-nio-8080-exec-6] c.rmsoft.security.SecurityUserService    : username : user
+2024-01-17T13:10:11.928+09:00  INFO 17516 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-17T13:10:12.260+09:00  INFO 17516 --- [http-nio-8080-exec-6] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@844977e
+2024-01-17T13:10:12.264+09:00  INFO 17516 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-17T13:10:12.313+09:00  INFO 17516 --- [http-nio-8080-exec-6] c.rmsoft.security.SecurityUserService    : userDetails : MyUserDetails(user=UserDTO(uid=user, pass=$2a$10$8E/mbHaCNQ6RjIcyAjIgUuVo3r8zvphcIYBzCPsmB8KOla3bLp1Fy, name=유저, nick=별명, email=user@gmail.com, hp=010-1234-1234, role=USER, zip=12345, addr1=주소1, addr2=주소2, regip=등록 ip, regDate=2024-01-16T00:00, leaveDate=null))
+2024-01-17T13:10:12.372+09:00  INFO 17516 --- [http-nio-8080-exec-6] com.rmsoft.security.MyUserDetails        : authorities[ROLE_USER]
+2024-01-17T13:10:12.389+09:00  INFO 17516 --- [http-nio-8080-exec-5] com.rmsoft.controller.MainController     : 로그인 완료~~~~~~~~~~~~~~~~
+2024-01-17T13:10:12.394+09:00  INFO 17516 --- [http-nio-8080-exec-5] c.r.c.subscribe.SubscribeController      : 서비스 현황 나와라!!!!!!!!1
+2024-01-17T13:12:53.981+09:00  INFO 17516 --- [http-nio-8080-exec-3] com.rmsoft.controller.MainController     : 로그인 완료~~~~~~~~~~~~~~~~
+2024-01-17T13:12:53.983+09:00  INFO 17516 --- [http-nio-8080-exec-3] c.r.c.subscribe.SubscribeController      : 서비스 현황 나와라!!!!!!!!1
+2024-01-17T13:13:02.607+09:00  INFO 17516 --- [http-nio-8080-exec-5] com.rmsoft.controller.MainController     : 로그인 완료~~~~~~~~~~~~~~~~
+2024-01-17T13:13:02.608+09:00  INFO 17516 --- [http-nio-8080-exec-5] c.r.c.subscribe.SubscribeController      : 서비스 현황 나와라!!!!!!!!1
+2024-01-17T13:21:26.822+09:00  INFO 17516 --- [http-nio-8080-exec-9] c.rmsoft.security.SecurityUserService    : username : user
+2024-01-17T13:21:26.849+09:00  INFO 17516 --- [http-nio-8080-exec-9] c.rmsoft.security.SecurityUserService    : userDetails : MyUserDetails(user=UserDTO(uid=user, pass=$2a$10$8E/mbHaCNQ6RjIcyAjIgUuVo3r8zvphcIYBzCPsmB8KOla3bLp1Fy, name=유저, nick=별명, email=user@gmail.com, hp=010-1234-1234, role=USER, zip=12345, addr1=주소1, addr2=주소2, regip=등록 ip, regDate=2024-01-16T00:00, leaveDate=null))
+2024-01-17T13:21:26.921+09:00  INFO 17516 --- [http-nio-8080-exec-9] com.rmsoft.security.MyUserDetails        : authorities[ROLE_USER]
+2024-01-17T13:21:26.927+09:00  INFO 17516 --- [http-nio-8080-exec-1] com.rmsoft.controller.MainController     : 로그인 완료~~~~~~~~~~~~~~~~
+2024-01-17T13:21:26.928+09:00  INFO 17516 --- [http-nio-8080-exec-1] c.r.c.subscribe.SubscribeController      : 서비스 현황 나와라!!!!!!!!1
+2024-01-17T13:21:28.365+09:00  INFO 17516 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 17 class path changes (0 additions, 0 deletions, 17 modifications)
+2024-01-17T13:21:28.380+09:00  INFO 17516 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-17T13:21:28.546+09:00  INFO 17516 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-17T13:21:28.630+09:00  INFO 17516 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 17516 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
+2024-01-17T13:21:28.631+09:00  INFO 17516 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-01-17T13:21:28.887+09:00  INFO 17516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-17T13:21:28.888+09:00  INFO 17516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-17T13:21:28.889+09:00  INFO 17516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-17T13:21:28.910+09:00  INFO 17516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-17T13:21:28.910+09:00  INFO 17516 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 276 ms
+2024-01-17T13:21:28.929+09:00  WARN 17516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [A38724BED707EDCB986075028538A91C]
+2024-01-17T13:21:28.932+09:00 ERROR 17516 --- [restartedMain] o.a.catalina.session.StandardManager     : Exception loading sessions from persistent storage
 
-org.apache.ibatis.binding.BindingException: Mapper method 'com.rmsoft.mapper.UserMapper.countUid' attempted to return null from a method with a primitive return type (int).
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:101) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.14.jar:3.5.14]
-	at jdk.proxy4/jdk.proxy4.$Proxy78.countUid(Unknown Source) ~[na:na]
-	at com.rmsoft.service.UserService.countUid(UserService.java:27) ~[main/:na]
-	at com.rmsoft.controller.user.UserCheckController.checkUid(UserCheckController.java:19) ~[main/:na]
+java.io.StreamCorruptedException: invalid type code: 00
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1775) ~[na:na]
+	at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2617) ~[na:na]
+	at java.base/java.io.ObjectInputStream.defaultReadObject(ObjectInputStream.java:652) ~[na:na]
+	at java.base/java.lang.Throwable.readObject(Throwable.java:912) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.17.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.17.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2024-01-16T14:45:54.390+09:00 ERROR 8652 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'role' cannot be null
-### The error may exist in file [C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\resources\main\mappers\user.xml]
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: INSERT INTO User SET uid=?,pass=?,name=?,nick=?,email=?,hp=?,role=?,zip=?,addr1=?,addr2=?,regip=?,regDate=NOW()
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'role' cannot be null
-; Column 'role' cannot be null] with root cause
-
-java.sql.SQLIntegrityConstraintViolationException: Column 'role' cannot be null
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.14.jar:3.5.14]
+	at java.base/java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1104) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2434) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2268) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1744) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:514) ~[na:na]
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:472) ~[na:na]
+	at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1348) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:985) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:156) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:346) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4877) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:488) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:105) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:499) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:218) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347) ~[spring-boot-3.2.1.jar:3.2.1]
+	at com.rmsoft.RmsoftApplication.main(RmsoftApplication.java:10) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425) ~[mybatis-spring-3.0.3.jar:3.0.3]
-	at jdk.proxy2/jdk.proxy2.$Proxy68.insert(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272) ~[mybatis-spring-3.0.3.jar:3.0.3]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.14.jar:3.5.14]
-	at jdk.proxy4/jdk.proxy4.$Proxy78.insertUser(Unknown Source) ~[na:na]
-	at com.rmsoft.service.UserService.insertUser(UserService.java:22) ~[main/:na]
-	at com.rmsoft.controller.user.UserController.register(UserController.java:30) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.17.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.17.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.1.jar:3.2.1]
 
-2024-01-16T14:49:23.911+09:00  INFO 8652 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 185 class path changes (0 additions, 0 deletions, 185 modifications)
-2024-01-16T14:49:23.951+09:00  INFO 8652 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-16T14:49:24.098+09:00  INFO 8652 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-16T14:49:24.251+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 8652 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T14:49:24.253+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T14:49:24.684+09:00  INFO 8652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T14:49:24.685+09:00  INFO 8652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T14:49:24.686+09:00  INFO 8652 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T14:49:24.714+09:00  INFO 8652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T14:49:24.715+09:00  INFO 8652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 458 ms
-2024-01-16T14:49:24.936+09:00  INFO 8652 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39ade105, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4aa0991e, org.springframework.security.web.context.SecurityContextHolderFilter@13d1855, org.springframework.security.web.header.HeaderWriterFilter@2d62522c, org.springframework.web.filter.CorsFilter@530f4800, org.springframework.security.web.authentication.logout.LogoutFilter@75175588, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1391a611, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@405912b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b09bd36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2803ecdb, org.springframework.security.web.access.ExceptionTranslationFilter@129f2485, org.springframework.security.web.access.intercept.AuthorizationFilter@19fc5173]
-2024-01-16T14:49:25.051+09:00  INFO 8652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-01-16T14:49:25.072+09:00  INFO 8652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-01-16T14:49:25.082+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 0.892 seconds (process running for 513.277)
-2024-01-16T14:49:25.084+09:00  INFO 8652 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-01-16T14:49:27.857+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-16T14:49:27.857+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-16T14:49:27.857+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-01-16T14:49:30.828+09:00  INFO 8652 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-01-16T14:49:31.024+09:00  INFO 8652 --- [http-nio-8080-exec-6] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@632a029f
-2024-01-16T14:49:31.032+09:00  INFO 8652 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-01-16T14:49:31.048+09:00 ERROR 8652 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.apache.ibatis.binding.BindingException: Mapper method 'com.rmsoft.mapper.UserMapper.countUid' attempted to return null from a method with a primitive return type (int).] with root cause
-
-org.apache.ibatis.binding.BindingException: Mapper method 'com.rmsoft.mapper.UserMapper.countUid' attempted to return null from a method with a primitive return type (int).
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:101) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.14.jar:3.5.14]
-	at jdk.proxy6/jdk.proxy6.$Proxy80.countUid(Unknown Source) ~[na:na]
-	at com.rmsoft.service.UserService.countUid(UserService.java:27) ~[main/:na]
-	at com.rmsoft.controller.user.UserCheckController.checkUid(UserCheckController.java:19) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.17.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.17.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2024-01-16T14:50:12.261+09:00  INFO 8652 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 185 class path changes (0 additions, 0 deletions, 185 modifications)
-2024-01-16T14:50:12.288+09:00  INFO 8652 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2024-01-16T14:50:12.460+09:00  INFO 8652 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2024-01-16T14:50:12.606+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 8652 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T14:50:12.607+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T14:50:12.970+09:00  INFO 8652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T14:50:12.971+09:00  INFO 8652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T14:50:12.971+09:00  INFO 8652 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T14:50:13.066+09:00  INFO 8652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T14:50:13.066+09:00  INFO 8652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 454 ms
-2024-01-16T14:50:13.257+09:00  INFO 8652 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@384b8419, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32e8f194, org.springframework.security.web.context.SecurityContextHolderFilter@2a12baaa, org.springframework.security.web.header.HeaderWriterFilter@5c47b78b, org.springframework.web.filter.CorsFilter@1708d11a, org.springframework.security.web.authentication.logout.LogoutFilter@445bd566, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@13b3235f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55f049e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a39e071, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@392939d0, org.springframework.security.web.access.ExceptionTranslationFilter@386efd19, org.springframework.security.web.access.intercept.AuthorizationFilter@22a195ce]
-2024-01-16T14:50:13.328+09:00  INFO 8652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-01-16T14:50:13.341+09:00  INFO 8652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-01-16T14:50:13.347+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 0.789 seconds (process running for 561.541)
-2024-01-16T14:50:13.349+09:00  INFO 8652 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-01-16T14:50:23.327+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-16T14:50:23.332+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-16T14:50:23.336+09:00  INFO 8652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2024-01-16T14:50:23.341+09:00  INFO 8652 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2024-01-16T14:50:23.529+09:00  INFO 8652 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f64980d
-2024-01-16T14:50:23.536+09:00  INFO 8652 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2024-01-16T15:03:30.776+09:00 ERROR 8652 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user' for key 'User.PRIMARY'
-### The error may exist in file [C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\resources\main\mappers\user.xml]
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: INSERT INTO User SET uid=?,pass=?,name=?,nick=?,email=?,hp=?,zip=?,addr1=?,addr2=?,regip=?,regDate=NOW()
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user' for key 'User.PRIMARY'
-; Duplicate entry 'user' for key 'User.PRIMARY'] with root cause
-
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user' for key 'User.PRIMARY'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.14.jar:3.5.14]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425) ~[mybatis-spring-3.0.3.jar:3.0.3]
-	at jdk.proxy2/jdk.proxy2.$Proxy68.insert(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272) ~[mybatis-spring-3.0.3.jar:3.0.3]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.14.jar:3.5.14]
-	at jdk.proxy7/jdk.proxy7.$Proxy81.insertUser(Unknown Source) ~[na:na]
-	at com.rmsoft.service.UserService.insertUser(UserService.java:22) ~[main/:na]
-	at com.rmsoft.controller.user.UserController.register(UserController.java:30) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.17.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.17.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2024-01-16T15:03:52.282+09:00  INFO 25488 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 25488 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T15:03:52.284+09:00  INFO 25488 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T15:03:52.337+09:00  INFO 25488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-01-16T15:03:52.337+09:00  INFO 25488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-01-16T15:03:53.875+09:00  INFO 25488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T15:03:53.888+09:00  INFO 25488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T15:03:53.890+09:00  INFO 25488 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T15:03:53.974+09:00  INFO 25488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T15:03:53.974+09:00  INFO 25488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1637 ms
-2024-01-16T15:03:54.723+09:00  INFO 25488 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31c75632, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7cc3fec, org.springframework.security.web.context.SecurityContextHolderFilter@3e2bb0b6, org.springframework.security.web.header.HeaderWriterFilter@503689be, org.springframework.web.filter.CorsFilter@60a727a3, org.springframework.security.web.authentication.logout.LogoutFilter@52ba3b8a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@73f10813, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e9f3d6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b17771c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b56335f, org.springframework.security.web.access.ExceptionTranslationFilter@6c0d2f1b, org.springframework.security.web.access.intercept.AuthorizationFilter@752862a4]
-2024-01-16T15:03:55.071+09:00  WARN 25488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2024-01-16T15:03:55.106+09:00  WARN 25488 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2024-01-16T15:03:55.132+09:00  INFO 25488 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-01-16T15:03:55.160+09:00 ERROR 25488 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2024-01-16T15:12:00.714+09:00  INFO 8652 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 185 class path changes (0 additions, 0 deletions, 185 modifications)
-2024-01-16T15:12:00.776+09:00  INFO 8652 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2024-01-16T15:12:00.914+09:00  INFO 8652 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2024-01-16T15:12:01.041+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 8652 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T15:12:01.042+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T15:12:01.526+09:00  INFO 8652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T15:12:01.527+09:00  INFO 8652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T15:12:01.528+09:00  INFO 8652 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T15:12:01.550+09:00  INFO 8652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T15:12:01.551+09:00  INFO 8652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 504 ms
-2024-01-16T15:12:01.707+09:00  INFO 8652 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@54456b2f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a857533, org.springframework.security.web.context.SecurityContextHolderFilter@6c624fae, org.springframework.security.web.header.HeaderWriterFilter@20de9c4b, org.springframework.web.filter.CorsFilter@5ff2483e, org.springframework.security.web.authentication.logout.LogoutFilter@252b978b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@67fe34ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1cea8a18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4750b8f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54e0f21c, org.springframework.security.web.access.ExceptionTranslationFilter@78e460b4, org.springframework.security.web.access.intercept.AuthorizationFilter@7fde88f4]
-2024-01-16T15:12:01.768+09:00  INFO 8652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-01-16T15:12:01.783+09:00  INFO 8652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-01-16T15:12:01.788+09:00  INFO 8652 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 0.788 seconds (process running for 1869.983)
-2024-01-16T15:12:01.789+09:00  INFO 8652 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-01-16T15:12:01.910+09:00  INFO 21048 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 21048 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T15:12:01.913+09:00  INFO 21048 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T15:12:01.970+09:00  INFO 21048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-01-16T15:12:01.970+09:00  INFO 21048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-01-16T15:12:04.132+09:00  INFO 21048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T15:12:04.176+09:00  INFO 21048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T15:12:04.177+09:00  INFO 21048 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T15:12:04.361+09:00  INFO 21048 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T15:12:04.363+09:00  INFO 21048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2391 ms
-2024-01-16T15:12:05.827+09:00  INFO 21048 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ff9d31a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14b45475, org.springframework.security.web.context.SecurityContextHolderFilter@56c83446, org.springframework.security.web.header.HeaderWriterFilter@9b2eae3, org.springframework.web.filter.CorsFilter@4bcd85d6, org.springframework.security.web.authentication.logout.LogoutFilter@fe7ea62, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66b5784c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3736da34, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30791b70, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a0c720d, org.springframework.security.web.access.ExceptionTranslationFilter@7a6e4d0b, org.springframework.security.web.access.intercept.AuthorizationFilter@2551d6f6]
-2024-01-16T15:12:06.273+09:00  WARN 21048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2024-01-16T15:12:06.301+09:00  WARN 21048 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2024-01-16T15:12:06.323+09:00  INFO 21048 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-01-16T15:12:06.347+09:00 ERROR 21048 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2024-01-16T15:18:20.620+09:00  INFO 8712 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 8712 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T15:18:20.623+09:00  INFO 8712 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T15:18:20.693+09:00  INFO 8712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-01-16T15:18:20.693+09:00  INFO 8712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-01-16T15:18:22.541+09:00  INFO 8712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T15:18:22.557+09:00  INFO 8712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T15:18:22.558+09:00  INFO 8712 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T15:18:22.632+09:00  INFO 8712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T15:18:22.632+09:00  INFO 8712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1938 ms
-2024-01-16T15:18:23.444+09:00  INFO 8712 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7582b989, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ba8d4be, org.springframework.security.web.context.SecurityContextHolderFilter@2309d8, org.springframework.security.web.header.HeaderWriterFilter@695fcb53, org.springframework.web.filter.CorsFilter@3a827712, org.springframework.security.web.authentication.logout.LogoutFilter@6b844b27, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ab4ec20, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b7d7fa9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f913f33, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b9b8b23, org.springframework.security.web.access.ExceptionTranslationFilter@19462fc2, org.springframework.security.web.access.intercept.AuthorizationFilter@77d3730]
-2024-01-16T15:18:23.819+09:00  INFO 8712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-01-16T15:18:23.869+09:00  INFO 8712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-01-16T15:18:23.884+09:00  INFO 8712 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 3.894 seconds (process running for 4.794)
-2024-01-16T15:18:32.292+09:00  INFO 8712 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-16T15:18:32.294+09:00  INFO 8712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-16T15:18:32.298+09:00  INFO 8712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2024-01-16T15:18:38.091+09:00  INFO 8712 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-16T15:18:38.916+09:00  INFO 8712 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@135a5817
-2024-01-16T15:18:38.924+09:00  INFO 8712 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-16T15:19:09.427+09:00 ERROR 8712 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user' for key 'User.PRIMARY'
-### The error may exist in file [C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\resources\main\mappers\user.xml]
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: INSERT INTO User SET uid=?,pass=?,name=?,nick=?,email=?,hp=?,zip=?,addr1=?,addr2=?,regip=?,regDate=NOW()
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user' for key 'User.PRIMARY'
-; Duplicate entry 'user' for key 'User.PRIMARY'] with root cause
-
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user' for key 'User.PRIMARY'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-j-8.1.0.jar:8.1.0]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.14.jar:3.5.14]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425) ~[mybatis-spring-3.0.3.jar:3.0.3]
-	at jdk.proxy2/jdk.proxy2.$Proxy68.insert(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272) ~[mybatis-spring-3.0.3.jar:3.0.3]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.14.jar:3.5.14]
-	at jdk.proxy3/jdk.proxy3.$Proxy69.insertUser(Unknown Source) ~[na:na]
-	at com.rmsoft.service.UserService.insertUser(UserService.java:22) ~[main/:na]
-	at com.rmsoft.controller.user.UserController.register(UserController.java:30) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.17.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.17.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.2.jar:6.1.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2024-01-16T15:42:39.236+09:00  INFO 8712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 185 class path changes (0 additions, 0 deletions, 185 modifications)
-2024-01-16T15:42:39.256+09:00  INFO 8712 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-16T15:42:39.392+09:00  INFO 8712 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-16T15:42:39.445+09:00  INFO 8712 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 8712 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
-2024-01-16T15:42:39.445+09:00  INFO 8712 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
-2024-01-16T15:42:39.593+09:00  INFO 8712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-01-16T15:42:39.594+09:00  INFO 8712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-16T15:42:39.594+09:00  INFO 8712 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-16T15:42:39.606+09:00  INFO 8712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-16T15:42:39.606+09:00  INFO 8712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 159 ms
-2024-01-16T15:42:39.679+09:00  INFO 8712 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c08d316, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bf35e12, org.springframework.security.web.context.SecurityContextHolderFilter@7219b294, org.springframework.security.web.header.HeaderWriterFilter@72a9c5f, org.springframework.web.filter.CorsFilter@5af5e333, org.springframework.security.web.authentication.logout.LogoutFilter@26a55b4d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50d925bd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40e35734, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@108cc0c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b52329c, org.springframework.security.web.access.ExceptionTranslationFilter@1ab940cc, org.springframework.security.web.access.intercept.AuthorizationFilter@6ee1e4fd]
-2024-01-16T15:42:39.709+09:00  INFO 8712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-01-16T15:42:39.714+09:00  INFO 8712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-01-16T15:42:39.717+09:00  INFO 8712 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 0.29 seconds (process running for 1460.626)
-2024-01-16T15:42:39.718+09:00  INFO 8712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-01-16T15:42:40.247+09:00  INFO 8712 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-16T15:42:40.247+09:00  INFO 8712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-16T15:42:40.249+09:00  INFO 8712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-01-16T15:42:42.445+09:00  INFO 8712 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-01-16T15:42:42.633+09:00  INFO 8712 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ad8841d
-2024-01-16T15:42:42.634+09:00  INFO 8712 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-01-17T13:21:29.091+09:00  INFO 17516 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21764647, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16cd1d95, org.springframework.security.web.context.SecurityContextHolderFilter@4338a5bb, org.springframework.security.web.header.HeaderWriterFilter@407e1d82, org.springframework.web.filter.CorsFilter@7032f6dd, org.springframework.security.web.authentication.logout.LogoutFilter@392644c0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27cf65be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e7ef7f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@663f090b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@395446ab, org.springframework.security.web.access.ExceptionTranslationFilter@a1e44f0, org.springframework.security.web.access.intercept.AuthorizationFilter@6de48971]
+2024-01-17T13:21:29.205+09:00  INFO 17516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-17T13:21:29.222+09:00  INFO 17516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-17T13:21:29.229+09:00  INFO 17516 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 0.624 seconds (process running for 689.872)
+2024-01-17T13:21:29.232+09:00  INFO 17516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-17T13:22:21.171+09:00  INFO 17020 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 17020 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
+2024-01-17T13:22:21.172+09:00  INFO 17020 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-01-17T13:22:21.199+09:00  INFO 17020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-17T13:22:21.199+09:00  INFO 17020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-17T13:22:21.869+09:00  INFO 17020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-17T13:22:21.876+09:00  INFO 17020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-17T13:22:21.876+09:00  INFO 17020 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-17T13:22:21.903+09:00  INFO 17020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-17T13:22:21.904+09:00  INFO 17020 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 704 ms
+2024-01-17T13:22:22.208+09:00  INFO 17020 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e1d187d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4430ba43, org.springframework.security.web.context.SecurityContextHolderFilter@19c06d40, org.springframework.security.web.header.HeaderWriterFilter@416576a5, org.springframework.web.filter.CorsFilter@28c82af2, org.springframework.security.web.authentication.logout.LogoutFilter@59b70b16, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f7355a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@752862a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f2d1432, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@992d1b6, org.springframework.security.web.access.ExceptionTranslationFilter@302f6650, org.springframework.security.web.access.intercept.AuthorizationFilter@2050055]
+2024-01-17T13:22:22.356+09:00  INFO 17020 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-17T13:22:22.377+09:00  INFO 17020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-17T13:22:22.383+09:00  INFO 17020 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 1.465 seconds (process running for 1.796)
+2024-01-17T13:22:32.222+09:00  INFO 17020 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-17T13:22:32.222+09:00  INFO 17020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-17T13:22:32.223+09:00  INFO 17020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-17T13:22:39.077+09:00  INFO 17020 --- [http-nio-8080-exec-10] c.rmsoft.security.SecurityUserService    : username : user
+2024-01-17T13:22:39.087+09:00  INFO 17020 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-17T13:22:39.460+09:00  INFO 17020 --- [http-nio-8080-exec-10] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e103d2f
+2024-01-17T13:22:39.465+09:00  INFO 17020 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-17T13:22:39.535+09:00  INFO 17020 --- [http-nio-8080-exec-10] c.rmsoft.security.SecurityUserService    : userDetails : MyUserDetails(user=UserDTO(uid=user, pass=$2a$10$8E/mbHaCNQ6RjIcyAjIgUuVo3r8zvphcIYBzCPsmB8KOla3bLp1Fy, name=유저, nick=별명, email=user@gmail.com, hp=010-1234-1234, role=USER, zip=12345, addr1=주소1, addr2=주소2, regip=등록 ip, regDate=2024-01-16T00:00, leaveDate=null))
+2024-01-17T13:22:39.597+09:00  INFO 17020 --- [http-nio-8080-exec-10] com.rmsoft.security.MyUserDetails        : authorities[ROLE_USER]
+2024-01-17T13:22:39.614+09:00  INFO 17020 --- [http-nio-8080-exec-9] com.rmsoft.controller.MainController     : 로그인 완료~~~~~~~~~~~~~~~~
+2024-01-17T13:22:39.618+09:00  INFO 17020 --- [http-nio-8080-exec-9] c.r.c.subscribe.SubscribeController      : 서비스 현황 나와라!!!!!!!!1
+2024-01-17T13:24:42.878+09:00  INFO 17020 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 185 class path changes (0 additions, 0 deletions, 185 modifications)
+2024-01-17T13:24:42.890+09:00  INFO 17020 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-17T13:24:43.077+09:00  INFO 17020 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-17T13:24:43.135+09:00  INFO 17020 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 17020 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
+2024-01-17T13:24:43.135+09:00  INFO 17020 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-01-17T13:24:43.285+09:00  INFO 17020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-17T13:24:43.285+09:00  INFO 17020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-17T13:24:43.286+09:00  INFO 17020 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-17T13:24:43.294+09:00  INFO 17020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-17T13:24:43.294+09:00  INFO 17020 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 157 ms
+2024-01-17T13:24:43.302+09:00  WARN 17020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [4AEC7B4F021683D48FC91CAF34EE51B3]
+2024-01-17T13:24:43.367+09:00  INFO 17020 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66d48482, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2be5f5ef, org.springframework.security.web.context.SecurityContextHolderFilter@25bd6bf3, org.springframework.security.web.header.HeaderWriterFilter@2a95614a, org.springframework.web.filter.CorsFilter@71bf664c, org.springframework.security.web.authentication.logout.LogoutFilter@582e90a9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e77f998, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5339ab01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@963f589, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ed30ef8, org.springframework.security.web.access.ExceptionTranslationFilter@72e51cab, org.springframework.security.web.access.intercept.AuthorizationFilter@3db84576]
+2024-01-17T13:24:43.399+09:00  INFO 17020 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-17T13:24:43.405+09:00  INFO 17020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-17T13:24:43.407+09:00  INFO 17020 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 0.293 seconds (process running for 142.821)
+2024-01-17T13:24:43.408+09:00  INFO 17020 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-17T13:31:25.172+09:00  INFO 15604 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 15604 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
+2024-01-17T13:31:25.177+09:00  INFO 15604 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-01-17T13:31:25.244+09:00  INFO 15604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-17T13:31:25.244+09:00  INFO 15604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-17T13:31:26.737+09:00  INFO 15604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-17T13:31:26.753+09:00  INFO 15604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-17T13:31:26.754+09:00  INFO 15604 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-17T13:31:26.831+09:00  INFO 15604 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-17T13:31:26.832+09:00  INFO 15604 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1587 ms
+2024-01-17T13:31:27.507+09:00  INFO 15604 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@480f34c1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f7355a2, org.springframework.security.web.context.SecurityContextHolderFilter@52ba3b8a, org.springframework.security.web.header.HeaderWriterFilter@6357f662, org.springframework.web.filter.CorsFilter@3c6515ad, org.springframework.security.web.authentication.logout.LogoutFilter@2fbd4534, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c68b8d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b9c8db2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@707d9710, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c226834, org.springframework.security.web.access.ExceptionTranslationFilter@39b7456d, org.springframework.security.web.access.intercept.AuthorizationFilter@23a48be1]
+2024-01-17T13:31:27.893+09:00  INFO 15604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-17T13:31:27.954+09:00  INFO 15604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-17T13:31:27.970+09:00  INFO 15604 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 3.521 seconds (process running for 4.477)
+2024-01-17T13:31:28.172+09:00  INFO 15604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-17T13:31:28.172+09:00  INFO 15604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-17T13:31:28.174+09:00  INFO 15604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-17T13:31:39.611+09:00  INFO 15604 --- [http-nio-8080-exec-2] c.rmsoft.security.SecurityUserService    : username : user
+2024-01-17T13:31:39.657+09:00  INFO 15604 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-17T13:31:40.566+09:00  INFO 15604 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69c1fab
+2024-01-17T13:31:40.571+09:00  INFO 15604 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-17T13:31:40.729+09:00  INFO 15604 --- [http-nio-8080-exec-2] c.rmsoft.security.SecurityUserService    : userDetails : MyUserDetails(user=UserDTO(uid=user, pass=$2a$10$8E/mbHaCNQ6RjIcyAjIgUuVo3r8zvphcIYBzCPsmB8KOla3bLp1Fy, name=유저, nick=별명, email=user@gmail.com, hp=010-1234-1234, role=USER, zip=12345, addr1=주소1, addr2=주소2, regip=등록 ip, regDate=2024-01-16T00:00, leaveDate=null))
+2024-01-17T13:31:40.947+09:00  INFO 15604 --- [http-nio-8080-exec-2] com.rmsoft.security.MyUserDetails        : authorities[ROLE_USER]
+2024-01-17T13:31:41.011+09:00  INFO 15604 --- [http-nio-8080-exec-4] com.rmsoft.controller.MainController     : 로그인 완료~~~~~~~~~~~~~~~~
+2024-01-17T13:31:41.028+09:00  INFO 15604 --- [http-nio-8080-exec-4] c.r.c.subscribe.SubscribeController      : 서비스 현황 나와라!!!!!!!!1
+2024-01-17T13:34:29.233+09:00  INFO 15604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-17T13:34:29.407+09:00  INFO 15604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-17T13:34:31.445+09:00  INFO 2672 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 2672 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
+2024-01-17T13:34:31.447+09:00  INFO 2672 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-01-17T13:34:31.482+09:00  INFO 2672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-17T13:34:31.482+09:00  INFO 2672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-17T13:34:32.204+09:00  INFO 2672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-17T13:34:32.211+09:00  INFO 2672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-17T13:34:32.211+09:00  INFO 2672 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-17T13:34:32.240+09:00  INFO 2672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-17T13:34:32.240+09:00  INFO 2672 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
+2024-01-17T13:34:32.274+09:00  WARN 2672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [D1C4578A3E1E3D5CC796F27903496B15]
+2024-01-17T13:34:32.574+09:00  INFO 2672 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6195ab29, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79bce7f8, org.springframework.security.web.context.SecurityContextHolderFilter@6a71d42a, org.springframework.security.web.header.HeaderWriterFilter@2cedc2db, org.springframework.web.filter.CorsFilter@cb055ae, org.springframework.security.web.authentication.logout.LogoutFilter@2374f22c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19cdb152, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@400425ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2050055, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67f350de, org.springframework.security.web.access.ExceptionTranslationFilter@6d3af64d, org.springframework.security.web.access.intercept.AuthorizationFilter@53b96112]
+2024-01-17T13:34:32.720+09:00  INFO 2672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-17T13:34:32.742+09:00  INFO 2672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-17T13:34:32.748+09:00  INFO 2672 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 1.688 seconds (process running for 2.128)
+2024-01-17T13:34:32.859+09:00  INFO 2672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-17T13:34:32.859+09:00  INFO 2672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-17T13:34:32.860+09:00  INFO 2672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-17T13:34:36.460+09:00  INFO 2672 --- [http-nio-8080-exec-3] c.rmsoft.security.SecurityUserService    : username : user
+2024-01-17T13:34:36.470+09:00  INFO 2672 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-17T13:34:36.778+09:00  INFO 2672 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a24e3a
+2024-01-17T13:34:36.779+09:00  INFO 2672 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-17T13:34:36.822+09:00  INFO 2672 --- [http-nio-8080-exec-3] c.rmsoft.security.SecurityUserService    : userDetails : MyUserDetails(user=UserDTO(uid=user, pass=$2a$10$8E/mbHaCNQ6RjIcyAjIgUuVo3r8zvphcIYBzCPsmB8KOla3bLp1Fy, name=유저, nick=별명, email=user@gmail.com, hp=010-1234-1234, role=USER, zip=12345, addr1=주소1, addr2=주소2, regip=등록 ip, regDate=2024-01-16T00:00, leaveDate=null))
+2024-01-17T13:34:36.878+09:00  INFO 2672 --- [http-nio-8080-exec-3] com.rmsoft.security.MyUserDetails        : authorities[ROLE_USER]
+2024-01-17T13:34:36.895+09:00  INFO 2672 --- [http-nio-8080-exec-4] com.rmsoft.controller.MainController     : 로그인 완료~~~~~~~~~~~~~~~~
+2024-01-17T13:34:36.899+09:00  INFO 2672 --- [http-nio-8080-exec-4] c.r.c.subscribe.SubscribeController      : 서비스 현황 나와라!!!!!!!!1
+2024-01-17T13:53:02.302+09:00  INFO 2672 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 185 class path changes (0 additions, 0 deletions, 185 modifications)
+2024-01-17T13:53:02.320+09:00  INFO 2672 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-17T13:53:02.496+09:00  INFO 2672 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-17T13:53:02.563+09:00  INFO 2672 --- [restartedMain] com.rmsoft.RmsoftApplication             : Starting RmsoftApplication using Java 17.0.7 with PID 2672 (C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft\build\classes\java\main started by 정민 in C:\Users\wjdal\OneDrive\바탕 화면\Workspace\Rmsoft)
+2024-01-17T13:53:02.563+09:00  INFO 2672 --- [restartedMain] com.rmsoft.RmsoftApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-01-17T13:53:02.715+09:00  INFO 2672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-17T13:53:02.716+09:00  INFO 2672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-17T13:53:02.716+09:00  INFO 2672 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-17T13:53:02.727+09:00  INFO 2672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-17T13:53:02.727+09:00  INFO 2672 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 163 ms
+2024-01-17T13:53:02.734+09:00  WARN 2672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [32C44F376BDE2EBBD3FBCB370AFBF8EF]
+2024-01-17T13:53:02.803+09:00  INFO 2672 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@400060f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bde4d84, org.springframework.security.web.context.SecurityContextHolderFilter@62ecaa4a, org.springframework.security.web.header.HeaderWriterFilter@793a38f7, org.springframework.web.filter.CorsFilter@63479f1a, org.springframework.security.web.authentication.logout.LogoutFilter@6188d1e9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7aa52445, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2246afa5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59c84fc2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cb7b5ab, org.springframework.security.web.access.ExceptionTranslationFilter@387861be, org.springframework.security.web.access.intercept.AuthorizationFilter@437189d0]
+2024-01-17T13:53:02.831+09:00  INFO 2672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-17T13:53:02.837+09:00  INFO 2672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-17T13:53:02.839+09:00  INFO 2672 --- [restartedMain] com.rmsoft.RmsoftApplication             : Started RmsoftApplication in 0.296 seconds (process running for 1112.22)
+2024-01-17T13:53:02.841+09:00  INFO 2672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

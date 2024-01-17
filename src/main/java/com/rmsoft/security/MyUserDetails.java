@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -17,6 +18,7 @@ import java.util.List;
 @Setter
 @Builder
 @ToString
+@Log4j2
 public class MyUserDetails implements UserDetails {
 	private static final long serialVersionUID = -5532680704133363159L;
 
@@ -30,6 +32,7 @@ public class MyUserDetails implements UserDetails {
 		// 반드시 접두어로 ROLE_ 입력해야 됨 그래야 hasRole(), hasAnyRole() 메서드가 처리됨
 		// 만약 ROLE_ 접두어를 안쓰면 hasAuthority(), hasAnyAuthority() 메서드로 해야됨
 		authorities.add(new SimpleGrantedAuthority("ROLE_"+user.getRole()));
+		log.info("authorities"+authorities);
 		return authorities;
 	}
 

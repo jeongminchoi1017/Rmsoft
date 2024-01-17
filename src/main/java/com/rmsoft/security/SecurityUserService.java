@@ -21,14 +21,11 @@ public class SecurityUserService implements UserDetailsService {
 		log.info("username : "+username);
 		// 패스워드에 대한 검사는 이전 컴포넌트(AuthenticationProvider)에서 처리되어 사용자 아이디만 넘어옴
 		UserDTO user = mapper.selectUser(username);
-		log.info("user : "+user);
 
 		// if 문을 사용하여 사용자가 존재하지 않으면 예외를 던지도록 처리
 		if (user == null) {
 			throw new UsernameNotFoundException(username + " NotFound");
 		}
-
-		log.info("user : " + user);
 
 		// 사용자 인증객체 생성(세션에 저장)
 		UserDetails userDetails = MyUserDetails.builder()

@@ -41,6 +41,8 @@ spring:
     # /를 붙여야 되는 경우는 controller 에서 return 되는 주소 값에 /가 있으면 빼야하고, /가 없으면 넣어줘야함
     # 예시) return "user/login"이면 넣어주기. "/user/login";이면 빼주기
     prefix: classpath:/templates
+    mvc:
+      static-path-pattern: "/static/**"
   servlet:
     multipart:
       location: src/main/resources/static/file/
