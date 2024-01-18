@@ -20,13 +20,11 @@ public class SubscribeController {
         log.info("서비스 현황 나와라!!!!!!!!1");
         return "/subscribe/list";
     }
-    /*@GetMapping("/subscribe/write")
-    public String write(PageRequestDTO pageRequestDTO){
-
-        // model.addAttribute(pageRequestDTO);
-        return "/article/write";
+    @GetMapping("/subscribe/write")
+    public String write(){
+        return "/subscribe/write";
     }
-
+    /*
     @PostMapping("/article/write")
     public String register(HttpServletRequest request, ArticleDTO dto){
 
