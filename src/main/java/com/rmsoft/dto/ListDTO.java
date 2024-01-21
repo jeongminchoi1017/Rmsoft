@@ -8,9 +8,10 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class SubscribeDTO {
+public class ListDTO {
 
     private int no;
     private String subscriber;
@@ -25,5 +26,10 @@ public class SubscribeDTO {
     private LocalDateTime regDate;
     private LocalDateTime endDate;
     private int yn;
+    private int typeNo;
+    private String name;
+    private int memberNum;
+    private int volume;
+    private int fee;
 
 }

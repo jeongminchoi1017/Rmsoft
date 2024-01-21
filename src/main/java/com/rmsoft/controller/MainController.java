@@ -10,10 +10,8 @@ public class MainController {
     @GetMapping(value = {"/", "/index"})
     public String index(Authentication authentication){
         if(authentication.isAuthenticated()){
-            log.info("로그인 완료~~~~~~~~~~~~~~~~");
             return "forward:/subscribe/list";
         }else {
-            log.info("로그인 실패~~~~~~~~~~~~~~~~");
             return "forward:/user/login";
         }
 
